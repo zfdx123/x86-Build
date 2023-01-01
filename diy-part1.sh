@@ -21,4 +21,4 @@ echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;lu
 
 git clone https://github.com/zfdx123/luci-app-netdata package/luci-app-netdata
 git clone https://github.com/zfdx123/patch
-cp -rf patch/999-hostapd-2.10-lar.patch target/linux/x86/patches-5.15/999-hostapd-2.10-lar.patch
+cp -rf patch/999-hostapd-2.10-lar.patch package/network/services/hostapd/patches/999-hostapd-2.10-lar.patch
