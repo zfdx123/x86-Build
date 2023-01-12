@@ -20,4 +20,5 @@ echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.gi
 echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;luci' >>feeds.conf.default
 
 git clone https://github.com/zfdx123/luci-app-netdata package/luci-app-netdata
-
+git clone https://github.com/zfdx123/patch
+cp -rf patch/999-hostapd-2.10-lar.patch package/network/services/hostapd/patches/999-hostapd-2.10-lar.patch
