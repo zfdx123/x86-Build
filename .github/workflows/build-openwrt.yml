@@ -38,10 +38,13 @@ jobs:
       with:
           ref: master
           fetch-depth: 0
+          
     - name: Cache
       uses: klever1988/cachewrtbuild@main
       with:
         ccache: 'true'
+        mixkey: 'x86_64'
+        prefix: 'openwrt'
 
     - name: Initialization environment
       env:
